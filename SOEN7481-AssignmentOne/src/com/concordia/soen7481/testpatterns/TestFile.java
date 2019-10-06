@@ -37,5 +37,10 @@ class TestFile {
 		assertEquals(2, StaticHelper.getResults().get("com.concordia.soen7481.InadequateLoggingInCatchPattern").size());
 	}
 	
+	@Test
+	void testFailToCloseStream() {	
+		assertEquals(2, StaticHelper.getResults().get("com.concordia.soen7481.FailToCloseStreamPattern").size());
+	}
+	
 
 }
