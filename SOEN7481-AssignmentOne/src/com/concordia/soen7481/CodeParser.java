@@ -20,18 +20,17 @@ public class CodeParser {
 
     public void parseProject(){
 
-    	//bugPatterns.add(new EqualsWithoutHashcodePattern());
-    	//bugPatterns.add(new FailToCloseStreamPattern());
-    	//bugPatterns.add(new ConditionhasNoEffectPattern());
-    	//bugPatterns.add(new InadequateLoggingInCatchPattern());            
+    	bugPatterns.add(new EqualsWithoutHashcodePattern());
+    	bugPatterns.add(new FailToCloseStreamPattern());
+    	bugPatterns.add(new ConditionhasNoEffectPattern());
+    	bugPatterns.add(new InadequateLoggingInCatchPattern());            
        
         
         loadJavaFiles();
         System.out.println("Total files to parse: " + javaFiles.size());
         int i= 0;
         for(String file: javaFiles){
-            applyRuleEvaluators(file);
-            //printAST(file);
+            applyRuleEvaluators(file);           
             System.out.println("Evaluating file: " + i++ + "  Name: " + file);
         }
         
