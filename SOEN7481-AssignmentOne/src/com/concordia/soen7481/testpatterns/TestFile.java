@@ -27,5 +27,10 @@ class TestFile {
 		assertEquals(pathName+"\\EqualsWithoutHashcodePatternTestFail.java", StaticHelper.getResults().get("com.concordia.soen7481.EqualsWithoutHashcodePattern").get(0).getFileName());
 	}
 	
+	@Test
+	void testConditionHasNoEffect() {
+		assertEquals(3, StaticHelper.getResults().get("com.concordia.soen7481.ConditionhasNoEffectPattern").size());
+	}
+	
 
 }
