@@ -18,6 +18,7 @@ class TestFile {
 	@BeforeEach public void initialize() {
 		StaticHelper.SourceFolder = pathName;
 		CodeParser codeParser = new CodeParser();
+		StaticHelper.results=new HashMap();
         codeParser.parseProject();
 		}	
 	

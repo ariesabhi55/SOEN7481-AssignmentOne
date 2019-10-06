@@ -8,7 +8,7 @@ public class StaticHelper {
 	
 	public static String SourceFolder;
     public static String Log_File;
-    private static HashMap<String, List<ResultFormat>> results = new HashMap<>();
+    public static HashMap<String, List<ResultFormat>> results = new HashMap<>();
 
     public static void addResult(String ruleName, ResultFormat result){
         if(results.containsKey(ruleName)){
