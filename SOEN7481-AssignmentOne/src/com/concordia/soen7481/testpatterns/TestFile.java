@@ -32,5 +32,10 @@ class TestFile {
 		assertEquals(3, StaticHelper.getResults().get("com.concordia.soen7481.ConditionhasNoEffectPattern").size());
 	}
 	
+	@Test
+	void testInadequateLoggingInCatch() {		
+		assertEquals(2, StaticHelper.getResults().get("com.concordia.soen7481.InadequateLoggingInCatchPattern").size());
+	}
+	
 
 }
